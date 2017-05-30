@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftLearn" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vl0-5P-aLt">
+                                <rect key="frame" x="143" y="40" width="89" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17X-AX-T2e">
+                                <rect key="frame" x="154" y="111" width="67" height="30"/>
+                                <state key="normal" title="PUSH ME"/>
+                                <connections>
+                                    <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KYR-Wa-PPP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tj5-uv-7yr">
+                                <rect key="frame" x="134.5" y="318.5" width="106" height="30"/>
+                                <state key="normal" title="ANOTHER ONE"/>
+                                <connections>
+                                    <action selector="AnotherONE:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ae5-Gc-gSN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tj5-uv-7yr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="13s-cO-7Gf"/>
+                            <constraint firstItem="tj5-uv-7yr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ElO-xA-7fu"/>
+                            <constraint firstItem="17X-AX-T2e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P0A-8A-nch"/>
+                            <constraint firstItem="17X-AX-T2e" firstAttribute="top" secondItem="vl0-5P-aLt" secondAttribute="bottom" constant="50" id="PW4-On-GeZ"/>
+                            <constraint firstItem="tj5-uv-7yr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SQz-vz-hsk"/>
+                            <constraint firstItem="vl0-5P-aLt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="YYZ-3h-QPL"/>
+                            <constraint firstItem="17X-AX-T2e" firstAttribute="top" secondItem="vl0-5P-aLt" secondAttribute="bottom" constant="50" id="aNU-ee-xWG"/>
+                            <constraint firstItem="vl0-5P-aLt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jup-Ht-x1f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coolLabel" destination="vl0-5P-aLt" id="Eat-pG-p0R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-354" y="-142"/>
+        </scene>
+    </scenes>
+</document>
